@@ -17,8 +17,10 @@ Use them for backgrounds, use them for UI elements, use them to make yourself ha
 The built in `CAGradientLayer` API is overly complex, doesn't work with auto layout, and is very fiddly. In one step you can create a `GradientView` and start making prettier controls.
 
 ```swift
+import GradientKit
+
 let gradientView = GradientView()
-gradientView.gradient = UniformGradient(colors: [UIColor.darkGrayColor, UIColor.lightGrayColor])
+gradientView.gradient = UniformGradient(colors: [.darkGrayColor, .lightGrayColor])
 ```
 
 There is no step 2. You now have a `UIView` subclass you can add to your screen.
