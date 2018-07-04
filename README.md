@@ -8,7 +8,7 @@
 
 Use them for backgrounds, use them for UI elements, use them to make yourself happy.
 
-![](Images/Gradient Examples.png)
+![](Images/gradient_examples.png)
 
 ---
 
