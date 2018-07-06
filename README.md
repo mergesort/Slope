@@ -124,14 +124,14 @@ private extension GradientButton {
 
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
-        let backgroundConstraints = [
+        let titleLabelConstraints = [
             self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.titleLabel.topAnchor.constraint(equalTo: self.topAnchor),
             self.titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ]
         
-        NSLayoutConstraint.activate(backgroundConstraints)
+        NSLayoutConstraint.activate(titleLabelConstraints)
     }
 
 }
