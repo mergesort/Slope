@@ -1,4 +1,4 @@
-# GradientKit
+# Slope
 
 #### Flat is out, so let's make depth easy.
 
@@ -17,14 +17,14 @@ Use them for backgrounds, use them for UI elements, use them to make yourself ha
 
 ---
 
-#### Using GradientKit is simple. Even a _very well_ trained [seal](https://en.wikipedia.org/wiki/Seal_(musician)) can use it.
+#### Using Slope is simple. Even a _very well_ trained [seal](https://en.wikipedia.org/wiki/Seal_(musician)) can use it.
 
 The built in `CAGradientLayer` API is overly complex, doesn't work with auto layout, and is very fiddly. 
 
 #### Let's build a gradient view like above:
 
 ```swift
-import GradientKit
+import Slope
 
 let gradientView = GradientView()
 gradientView.gradient = UniformGradient(colors: [.darkGrayColor, .lightGrayColor])
@@ -153,13 +153,13 @@ You can create your own as you see fit by conforming to the `Gradient` protocol.
 
 
 ## Installation
-You can use [CocoaPods](http://cocoapods.org/) to install `GradientKit` by adding it to your `Podfile`:
+You can use [CocoaPods](http://cocoapods.org/) to install `Slope` by adding it to your `Podfile`:
 
 ```swift
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'GradientKit'
+pod 'Slope'
 ```
 
 Or install it manually by downloading `Gradient.swift`, `UniformGradient.swift`, `PercentageGradient.swift`, and `GradientView.swift`, and dropping them in your project.
@@ -170,7 +170,7 @@ Hi, I'm [Joe](http://fabisevi.ch) everywhere on the web, but especially on [Twit
 
 ## License
 
-See the [license](LICENSE) for more information about how you can use GradientKit.
+See the [license](LICENSE) for more information about how you can use Slope.
 
 ## Is that it?
 
