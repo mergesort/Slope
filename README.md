@@ -137,7 +137,7 @@ private extension GradientButton {
 }
 ```
 
-And viola, a beautiful gradient button with highlighting that you can reuse across your app.
+And voilà, a beautiful gradient button with highlighting that you can reuse across your app.
 
 ---
 
