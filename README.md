@@ -17,9 +17,11 @@ Use them for backgrounds, use them for UI elements, use them to make yourself ha
 
 ---
 
-#### Using Slope is simple. Even a _very well_ trained [seal](https://en.wikipedia.org/wiki/Seal_(musician)) can use it.
-
 The built in `CAGradientLayer` API is overly complex, doesn't work with auto layout, and is very fiddly. 
+
+Using Slope is simple.
+
+Simple is better than complex!
 
 #### Let's build a gradient view like above:
 
