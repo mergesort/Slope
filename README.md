@@ -29,7 +29,7 @@ Simple is better than complex!
 import Slope
 
 let gradientView = GradientView()
-gradientView.gradient = UniformGradient(colors: [.darkGrayColor, .lightGrayColor])
+gradientView.gradient = UniformGradient(colors: [.darkGray, .lightGray])
 ```
 
 There is no step 2. You now have a `UIView` subclass that you can add to your screen.
