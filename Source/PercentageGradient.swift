@@ -16,21 +16,21 @@ public struct GradientPoints {
 
 public enum GradientAngle {
     
-    case horizontal
-    case vertical
     case diagonalAscending
     case diagonalDescending
+    case horizontal
+    case vertical
     
     func gradientPoints() -> GradientPoints {
         switch self {
-        case .horizontal:
-            return GradientPoints(start: CGPoint(x: 0.0, y: 0.5), end: CGPoint(x: 1.0, y: 0.5))
-        case .vertical:
-            return GradientPoints(start: CGPoint(x: 0.5, y: 0.0), end: CGPoint(x: 0.5, y: 1.0))
         case .diagonalAscending:
             return GradientPoints(start: CGPoint(x: 0.0, y: 1.0), end: CGPoint(x: 1.0, y: 0.0))
         case .diagonalDescending:
             return GradientPoints(start: CGPoint(x: 0.0, y: 0.0), end: CGPoint(x: 1.0, y: 1.0))
+        case .horizontal:
+            return GradientPoints(start: CGPoint(x: 0.0, y: 0.5), end: CGPoint(x: 1.0, y: 0.5))
+        case .vertical:
+            return GradientPoints(start: CGPoint(x: 0.5, y: 0.0), end: CGPoint(x: 0.5, y: 1.0))
         }
     }
     
@@ -41,16 +41,16 @@ public struct PercentageGradient: Gradient {
     public var angle: GradientAngle?
     public let baseColor: UIColor
     public let direction: GradientDirection
+    public let endPoint: CGPoint
     public let percentage: CGFloat
     public let startPoint: CGPoint
-    public let endPoint: CGPoint
 
     public init(baseColor: UIColor, direction: GradientDirection, percentage: CGFloat, startPoint: CGPoint = CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint = CGPoint(x: 0.5, y: 1.0)) {
         self.baseColor = baseColor
         self.direction = direction
+        self.endPoint = endPoint
         self.percentage = percentage
         self.startPoint = startPoint
-        self.endPoint = endPoint
     }
     
     public init(baseColor: UIColor, direction: GradientDirection, percentage: CGFloat, angle: GradientAngle) {
