@@ -12,7 +12,7 @@ class PercentageGradientViewController: UIViewController {
 
     private let backgroundGradientView: GradientView = {
         let gradientView = GradientView()
-        gradientView.gradient = PercentageGradient(baseColor: #colorLiteral(red: 0.05882352941, green: 0.4509803922, blue: 0.6980392157, alpha: 1), direction: GradientDirection.lightToDark, percentage: 0.2)
+        gradientView.gradient = PercentageGradient(baseColor: #colorLiteral(red: 0.05882352941, green: 0.4509803922, blue: 0.6980392157, alpha: 1), percentage: 0.2)
 
         return gradientView
     }()

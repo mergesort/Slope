@@ -16,16 +16,22 @@ public struct GradientPoints {
 
 public enum GradientAngle {
     
-    case diagonalAscending
-    case diagonalDescending
+    case custom(start: CGPoint, end: CGPoint)
+    case defaultAngle
+    case bottomLeftToTopRight
+    case topLeftToBottomRight
     case horizontal
     case vertical
     
     func gradientPoints() -> GradientPoints {
         switch self {
-        case .diagonalAscending:
+        case .custom (let start, let end):
+            return GradientPoints(start: start, end: end)
+        case .bottomLeftToTopRight:
             return GradientPoints(start: CGPoint(x: 0.0, y: 1.0), end: CGPoint(x: 1.0, y: 0.0))
-        case .diagonalDescending:
+        case .defaultAngle:
+            return GradientPoints(start: CGPoint(x: 0.5, y: 0.0), end: CGPoint(x: 0.5, y: 1.0))
+        case .topLeftToBottomRight:
             return GradientPoints(start: CGPoint(x: 0.0, y: 0.0), end: CGPoint(x: 1.0, y: 1.0))
         case .horizontal:
             return GradientPoints(start: CGPoint(x: 0.0, y: 0.5), end: CGPoint(x: 1.0, y: 0.5))
@@ -38,23 +44,16 @@ public enum GradientAngle {
 
 public struct PercentageGradient: Gradient {
 
-    public var angle: GradientAngle?
+    public let angle: GradientAngle
     public let baseColor: UIColor
     public let direction: GradientDirection
-    public let endPoint: CGPoint
     public let percentage: CGFloat
-    public let startPoint: CGPoint
-
-    public init(baseColor: UIColor, direction: GradientDirection, percentage: CGFloat, startPoint: CGPoint = CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint = CGPoint(x: 0.5, y: 1.0)) {
+    
+    public init(baseColor: UIColor, direction: GradientDirection = .lightToDark, percentage: CGFloat, angle: GradientAngle = .defaultAngle) {
+        self.angle = angle
         self.baseColor = baseColor
         self.direction = direction
-        self.endPoint = endPoint
         self.percentage = percentage
-        self.startPoint = startPoint
-    }
-    
-    public init(baseColor: UIColor, direction: GradientDirection, percentage: CGFloat, angle: GradientAngle) {
-        self.init(baseColor: baseColor, direction: direction, percentage: percentage, startPoint: angle.gradientPoints().start, endPoint: angle.gradientPoints().end)
     }
 
 }

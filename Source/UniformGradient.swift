@@ -2,19 +2,12 @@ import UIKit
 
 public struct UniformGradient: Gradient {
 
-    public var angle: GradientAngle?
+    public var angle: GradientAngle
     public let colors: [UIColor]
-    public let endPoint: CGPoint
-    public let startPoint: CGPoint
 
-    public init(colors: [UIColor], startPoint: CGPoint = CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint = CGPoint(x: 0.5, y: 1.0)) {
+    public init(colors: [UIColor], angle: GradientAngle = .defaultAngle) {
         self.colors = colors
-        self.startPoint = startPoint
-        self.endPoint = endPoint
-    }
-    
-    public init(colors: [UIColor], angle: GradientAngle) {
-        self.init(colors: colors, startPoint: angle.gradientPoints().start, endPoint: angle.gradientPoints().end)
+        self.angle = angle
     }
 
 }

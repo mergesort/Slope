@@ -9,8 +9,7 @@ public struct GradientComponents {
 
 public protocol Gradient {
 
-    var endPoint: CGPoint { get }
-    var startPoint: CGPoint { get }
+    var angle: GradientAngle { get }
     func makeGradientComponents() -> [GradientComponents]
 
 }
