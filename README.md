@@ -56,7 +56,7 @@ final class GradientButton: UIControl {
             self.highlightedColor = self.tintColor.darkened(byPercentage: 0.1)
             
             let lightGreen = #colorLiteral(red: 0, green: 0.8235294118, blue: 0.5764705882, alpha: 1)
-            self.backgroundGradientView.gradient = PercentageGradient(baseColor: lightGreen, direction: .lightToDark, percentage: 0.06)
+            self.backgroundGradientView.gradient = PercentageGradient(baseColor: lightGreen, percentage: 0.06)
         }
     }
 
