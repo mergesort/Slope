@@ -34,7 +34,7 @@ public enum GradientAngle {
     var gradientPoints: GradientPoints {
         switch self {
             
-        case .custom (let start, let end):
+        case .custom(let start, let end):
             return GradientPoints(start: start, end: end)
             
         case .bottomLeftToTopRight:
