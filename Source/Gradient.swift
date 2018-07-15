@@ -7,17 +7,17 @@ public protocol Gradient {
 
 }
 
-public struct GradientPoints {
-    
-    public var start: CGPoint
-    public var end: CGPoint
-    
-}
-
 public struct GradientComponents {
     
     let color: UIColor
     let location: Double
+    
+}
+
+public struct GradientPoints {
+    
+    public var start: CGPoint
+    public var end: CGPoint
     
 }
 
