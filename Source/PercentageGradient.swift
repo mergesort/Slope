@@ -16,6 +16,7 @@ public struct GradientPoints {
 
 public enum GradientAngle {
     
+    public static let defaultAngle = GradientAngle.vertical
     var gradientPoints: GradientPoints {
         switch self {
         case .custom (let start, let end):
@@ -30,8 +31,6 @@ public enum GradientAngle {
             return GradientPoints(start: CGPoint(x: 0.5, y: 0.0), end: CGPoint(x: 0.5, y: 1.0))
         }
     }
-    
-    public static let defaultAngle = GradientAngle.vertical
     
     case custom(start: CGPoint, end: CGPoint)
     case bottomLeftToTopRight
