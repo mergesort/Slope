@@ -14,10 +14,10 @@ public struct GradientComponents {
     
 }
 
-public struct GradientPoints {
+struct GradientPoints {
     
-    public var start: CGPoint
-    public var end: CGPoint
+    let start: CGPoint
+    let end: CGPoint
     
 }
 
