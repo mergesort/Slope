@@ -2,8 +2,8 @@ import UIKit
 
 public struct UniformGradient: Gradient {
 
-    public var angle: GradientAngle
     public let colors: [UIColor]
+    public let angle: GradientAngle
 
     public init(colors: [UIColor], angle: GradientAngle = .defaultAngle) {
         self.colors = colors
