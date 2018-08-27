@@ -14,13 +14,6 @@ public struct GradientComponents {
 
 }
 
-struct GradientPoints {
-
-    let start: CGPoint
-    let end: CGPoint
-
-}
-
 public struct GradientAngle {
 
     public let start: CGPoint
