@@ -4,6 +4,7 @@ public final class GradientView: UIView {
 
     private let gradientLayer = CAGradientLayer()
 
+    /// The backing `Gradient` which will be displayed in the view.
     public var gradient: Gradient = UniformGradient(colors: [.white]) {
         didSet {
             self.generateGradient()

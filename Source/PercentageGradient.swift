@@ -1,10 +1,19 @@
 import UIKit
 
+/// A `Gradient` that uses a base color and a percentage to offset.
 public struct PercentageGradient: Gradient {
 
+    /// The color that will serve as the foundation of the gradient.
+    /// This is the color you will see at the center of the gradient,
+    /// and be lighter or darker outward from that point.
     public let baseColor: UIColor
+    
     public let angle: GradientAngle
+    
+    /// The percentage that the `baseColor` will be modified.
     public let percentage: CGFloat
+
+    // MARK: Initializers
 
     public init(baseColor: UIColor, angle: GradientAngle = .defaultAngle, percentage: CGFloat) {
         self.angle = angle
