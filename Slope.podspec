@@ -5,6 +5,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT' }
   spec.authors      =  { 'Joe Fabisevich' => 'github@fabisevi.ch' }
   spec.source_files = 'Source/*.swift'
+  spec.swift_version = '>= 4.0, <= 4.2'
   spec.homepage = 'https://github.com/mergesort'
   spec.source  = { :git => 'https://github.com/mergesort/Slope.git', :tag => "#{spec.version}" }
 
