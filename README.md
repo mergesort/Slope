@@ -4,8 +4,8 @@
 
 ---
 
-[![Pod Version](https://img.shields.io/badge/Pod-1.0-6193DF.svg)](https://cocoapods.org/)
-![Swift Version](https://img.shields.io/badge/Swift-4.2-brightgreen.svg)
+[![Pod Version](https://img.shields.io/badge/Pod-1.1-6193DF.svg)](https://cocoapods.org/)
+![Swift Version](https://img.shields.io/badge/Swift-4.0-brightgreen.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
 ![Plaform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
@@ -56,7 +56,7 @@ final class GradientButton: UIControl {
             self.highlightedColor = self.tintColor.darkened(byPercentage: 0.1)
             
             let lightGreen = #colorLiteral(red: 0, green: 0.8235294118, blue: 0.5764705882, alpha: 1)
-            self.backgroundGradientView.gradient = PercentageGradient(baseColor: lightGreen, direction: .lightToDark, percentage: 0.06)
+            self.backgroundGradientView.gradient = PercentageGradient(baseColor: lightGreen, percentage: 0.06)
         }
     }
 

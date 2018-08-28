@@ -39,7 +39,8 @@ private extension GradientView {
     }
 
     func generateGradient() {
-        self.gradientLayer.startPoint = self.gradient.startPoint
+        self.gradientLayer.startPoint = self.gradient.angle.start
+        self.gradientLayer.endPoint = self.gradient.angle.end
         
         let components = self.gradient.makeGradientComponents()
         let colors = components.map { $0.color.cgColor }

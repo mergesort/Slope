@@ -3,11 +3,11 @@ import UIKit
 public struct UniformGradient: Gradient {
 
     public let colors: [UIColor]
-    public let startPoint: CGPoint
+    public let angle: GradientAngle
 
-    public init(colors: [UIColor], startPoint: CGPoint = CGPoint(x: 0.5, y: 0.0)) {
+    public init(colors: [UIColor], angle: GradientAngle = .defaultAngle) {
         self.colors = colors
-        self.startPoint = startPoint
+        self.angle = angle
     }
 
 }

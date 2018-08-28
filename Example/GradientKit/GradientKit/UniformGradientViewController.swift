@@ -12,7 +12,7 @@ class UniformGradientViewController: UIViewController {
 
     private let backgroundGradientView: GradientView = {
         let gradientView = GradientView()
-        gradientView.gradient = UniformGradient(colors: [#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)])
+        gradientView.gradient = UniformGradient(colors: [#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)], angle: GradientAngle.vertical.reversed)
 
         return gradientView
     }()
