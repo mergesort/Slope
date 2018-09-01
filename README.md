@@ -5,7 +5,7 @@
 ---
 
 [![Pod Version](https://img.shields.io/badge/Pod-1.1-6193DF.svg)](https://cocoapods.org/)
-![Swift Version](https://img.shields.io/badge/Swift-4.0-brightgreen.svg)
+![Swift Version](https://img.shields.io/badge/Swift-4.1-brightgreen.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
 ![Plaform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 
