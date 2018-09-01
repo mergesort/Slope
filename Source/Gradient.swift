@@ -17,8 +17,8 @@ public protocol Gradient {
 /// A `Gradient` is created when you compile an array of `GradientComponents`.
 public struct GradientComponents {
 
-    let color: UIColor
-    let location: Double
+    public let color: UIColor
+    public let location: Double
 
 }
 
@@ -44,7 +44,7 @@ public struct GradientAngle {
     /// A `GradientAngle` that swaps the end point and start point.
     /// This is useful if you want to create a gradient that goes from
     /// dark to light rather than light to dark.
-    var reversed: GradientAngle {
+    public var reversed: GradientAngle {
         return GradientAngle(start: self.end, end: self.start)
     }
 
