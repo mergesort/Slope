@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Slope'
   spec.summary      = 'A simpler way to implement simple gradients on iOS.'
-  spec.version      = '1.1.0'
+  spec.version      = '1.1'
   spec.license      = { :type => 'MIT' }
   spec.authors      =  { 'Joe Fabisevich' => 'github@fabisevi.ch' }
   spec.source_files = 'Source/*.swift'
