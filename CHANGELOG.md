@@ -1,3 +1,7 @@
+# 1.2 (2018-12-26)
+
+- Updated to Swift 4.2.
+
 # 1.1 (2018-08-26)
 
 #### Thanks to [@adamstener](https://github.com/adamstener) for the big help with this release!
