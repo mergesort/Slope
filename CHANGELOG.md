@@ -1,3 +1,8 @@
+# 1.3.0 (2020-01-19)
+
+- Adding Swift 5.1 support.
+- Adding SPM support.
+
 # 1.2 (2018-12-26)
 
 - Updated to Swift 4.2.
