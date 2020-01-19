@@ -7,9 +7,9 @@ public struct PercentageGradient: Gradient {
     /// This is the color you will see at the center of the gradient,
     /// and be lighter or darker outward from that point.
     public let baseColor: UIColor
-    
+
     public let angle: GradientAngle
-    
+
     /// The percentage that the `baseColor` will be modified.
     public let percentage: CGFloat
 
@@ -43,11 +43,11 @@ public extension PercentageGradient {
 private extension PercentageGradient {
 
     func lighterColor(from color: UIColor) -> UIColor {
-        return (color.changedBrightness(byPercentage: self.percentage) ?? UIColor.white)
+        return (color.brightnessOffset(byPercentage: self.percentage) ?? UIColor.white)
     }
 
     func darkerColor(from color: UIColor) -> UIColor {
-        return (color.changedBrightness(byPercentage: -self.percentage) ?? UIColor.black)
+        return (color.brightnessOffset(byPercentage: -self.percentage) ?? UIColor.black)
     }
 
 }
@@ -65,7 +65,7 @@ private extension UIColor {
         return (hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
     }
     
-    func changedBrightness(byPercentage percent: CGFloat) -> UIColor? {
+    func brightnessOffset(byPercentage percent: CGFloat) -> UIColor? {
         guard percent != 0 else { return self.copy() as? UIColor }
 
         guard let hsba = self.hsba() else { return nil }

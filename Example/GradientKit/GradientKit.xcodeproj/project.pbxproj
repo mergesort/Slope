@@ -12,11 +12,11 @@
 		B701BA6D20ED0D4500BC07A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B701BA6B20ED0D4500BC07A3 /* Main.storyboard */; };
 		B701BA6F20ED0D4800BC07A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B701BA6E20ED0D4800BC07A3 /* Assets.xcassets */; };
 		B701BA7220ED0D4800BC07A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B701BA7020ED0D4800BC07A3 /* LaunchScreen.storyboard */; };
-		B701BA7E20ED0EB500BC07A3 /* PercentageGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B701BA7A20ED0EB500BC07A3 /* PercentageGradient.swift */; };
-		B701BA7F20ED0EB500BC07A3 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B701BA7B20ED0EB500BC07A3 /* Gradient.swift */; };
-		B701BA8020ED0EB500BC07A3 /* UniformGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B701BA7C20ED0EB500BC07A3 /* UniformGradient.swift */; };
-		B701BA8120ED0EB500BC07A3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B701BA7D20ED0EB500BC07A3 /* GradientView.swift */; };
 		B7953EE020ED14D6004AB3DD /* PercentageGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7953EDF20ED14D6004AB3DD /* PercentageGradientViewController.swift */; };
+		B7BC3CE923D50899008BFF18 /* PercentageGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC3CE523D50898008BFF18 /* PercentageGradient.swift */; };
+		B7BC3CEA23D50899008BFF18 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC3CE623D50898008BFF18 /* Gradient.swift */; };
+		B7BC3CEB23D50899008BFF18 /* UniformGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC3CE723D50898008BFF18 /* UniformGradient.swift */; };
+		B7BC3CEC23D50899008BFF18 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC3CE823D50898008BFF18 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		B701BA6E20ED0D4800BC07A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B701BA7120ED0D4800BC07A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B701BA7320ED0D4800BC07A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B701BA7A20ED0EB500BC07A3 /* PercentageGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageGradient.swift; sourceTree = "<group>"; };
-		B701BA7B20ED0EB500BC07A3 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
-		B701BA7C20ED0EB500BC07A3 /* UniformGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformGradient.swift; sourceTree = "<group>"; };
-		B701BA7D20ED0EB500BC07A3 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B7953EDF20ED14D6004AB3DD /* PercentageGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageGradientViewController.swift; sourceTree = "<group>"; };
+		B7BC3CE523D50898008BFF18 /* PercentageGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageGradient.swift; sourceTree = "<group>"; };
+		B7BC3CE623D50898008BFF18 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		B7BC3CE723D50898008BFF18 /* UniformGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformGradient.swift; sourceTree = "<group>"; };
+		B7BC3CE823D50898008BFF18 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		B701BA6620ED0D4500BC07A3 /* GradientKit */ = {
 			isa = PBXGroup;
 			children = (
-				B701BA7920ED0EB500BC07A3 /* Source */,
+				B7BC3CE323D50898008BFF18 /* Sources */,
 				B701BA6720ED0D4500BC07A3 /* AppDelegate.swift */,
 				B701BA6920ED0D4500BC07A3 /* UniformGradientViewController.swift */,
 				B7953EDF20ED14D6004AB3DD /* PercentageGradientViewController.swift */,
@@ -76,16 +76,24 @@
 			path = GradientKit;
 			sourceTree = "<group>";
 		};
-		B701BA7920ED0EB500BC07A3 /* Source */ = {
+		B7BC3CE323D50898008BFF18 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B701BA7A20ED0EB500BC07A3 /* PercentageGradient.swift */,
-				B701BA7B20ED0EB500BC07A3 /* Gradient.swift */,
-				B701BA7C20ED0EB500BC07A3 /* UniformGradient.swift */,
-				B701BA7D20ED0EB500BC07A3 /* GradientView.swift */,
+				B7BC3CE423D50898008BFF18 /* Slope */,
 			);
-			name = Source;
-			path = ../../../Source;
+			name = Sources;
+			path = ../../../Sources;
+			sourceTree = "<group>";
+		};
+		B7BC3CE423D50898008BFF18 /* Slope */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC3CE523D50898008BFF18 /* PercentageGradient.swift */,
+				B7BC3CE623D50898008BFF18 /* Gradient.swift */,
+				B7BC3CE723D50898008BFF18 /* UniformGradient.swift */,
+				B7BC3CE823D50898008BFF18 /* GradientView.swift */,
+			);
+			path = Slope;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +128,7 @@
 				TargetAttributes = {
 					B701BA6320ED0D4500BC07A3 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -160,13 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B701BA7E20ED0EB500BC07A3 /* PercentageGradient.swift in Sources */,
+				B7BC3CEA23D50899008BFF18 /* Gradient.swift in Sources */,
 				B701BA6A20ED0D4500BC07A3 /* UniformGradientViewController.swift in Sources */,
-				B701BA8120ED0EB500BC07A3 /* GradientView.swift in Sources */,
+				B7BC3CEB23D50899008BFF18 /* UniformGradient.swift in Sources */,
 				B7953EE020ED14D6004AB3DD /* PercentageGradientViewController.swift in Sources */,
-				B701BA8020ED0EB500BC07A3 /* UniformGradient.swift in Sources */,
+				B7BC3CEC23D50899008BFF18 /* GradientView.swift in Sources */,
 				B701BA6820ED0D4500BC07A3 /* AppDelegate.swift in Sources */,
-				B701BA7F20ED0EB500BC07A3 /* Gradient.swift in Sources */,
+				B7BC3CE923D50899008BFF18 /* PercentageGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.GradientKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -337,7 +345,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mergesort.GradientKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

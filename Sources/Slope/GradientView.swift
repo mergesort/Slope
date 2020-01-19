@@ -1,5 +1,6 @@
 import UIKit
 
+/// A UIView subclass allowing you to easily create and display a gradient.
 public final class GradientView: UIView {
 
     private let gradientLayer = CAGradientLayer()

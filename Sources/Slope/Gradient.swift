@@ -5,7 +5,7 @@ public protocol Gradient {
 
     /// The angle that is needed to construct a `Gradient`.
     var angle: GradientAngle { get }
-    
+
     /// An array of `GradientComponents` that will be used in constructing a full gradient.
     ///
     /// - Returns: The array of `GradientComponents` which are used to construct a `Gradient`.
@@ -16,10 +16,8 @@ public protocol Gradient {
 /// The basic component needed to construct a `Gradient`.
 /// A `Gradient` is created when you compile an array of `GradientComponents`.
 public struct GradientComponents {
-
     public let color: UIColor
     public let location: Double
-
 }
 
 /// A `GradientAngle` defines the shape of a `Gradient`.
